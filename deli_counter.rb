@@ -11,7 +11,6 @@ def line(deli_counter)
 end
 
 def take_a_number(deli_counter, name)
-  deli_counter = []
   deli_counter << name
-  deli_counter.each{|name| puts "Welcome, #{name}. You are number 1 in line."}
+  deli_counter.each.with_index(1){|name, index| puts "Welcome, #{name}. You are number #{index} in line."}
 end
