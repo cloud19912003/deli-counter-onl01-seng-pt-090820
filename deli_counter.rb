@@ -1,7 +1,7 @@
 require 'pry'
 
 def line(deli_counter)
-  if deli_counter.size >= 1
+  if deli_counter.length >= 1
     new_counter = []
     counter = 1 
     deli_counter.each do |name|
