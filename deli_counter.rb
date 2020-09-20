@@ -7,12 +7,8 @@ def line(deli_counter)
     deli_counter.each do |name|
       new_counter.push("#{counter}. #{name}")
       counter += 1 
-  end 
-    puts "The line is currently: #{new_counter.join(" ")}"
-    
-    puts "The line is currently: 1. #{deli_counter[0]} 2. #{deli_counter[1]} 3. #{deli_counter[2]}"
-  elsif deli_counter.size == 10 
-    puts "The line is currently: 1. #{deli_counter[0]} 2. #{deli_counter[1]} 3. #{deli_counter[2]} 4. #{deli_counter[3]} 5. #{deli_counter[4]} 6. #{deli_counter[5]} 7. #{deli_counter[6]} 8. #{deli_counter[7]} 9. #{deli_counter[8]} 10. #{deli_counter[9]}"
+    end 
+      puts "The line is currently: #{new_counter.join(" ")}"
   else
     puts "The line is currently empty."
   end
