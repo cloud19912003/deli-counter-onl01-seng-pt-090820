@@ -8,7 +8,7 @@ def line(deli_counter)
       new_counter.push("#{counter}. #{name}")
       counter += 1 
   end 
-    
+    puts "The line is currently: #{new_counter.join(" ")}"
     
     puts "The line is currently: 1. #{deli_counter[0]} 2. #{deli_counter[1]} 3. #{deli_counter[2]}"
   elsif deli_counter.size == 10 
