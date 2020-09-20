@@ -3,10 +3,10 @@ require 'pry'
 def line(deli_counter)
   if deli_counter.length >= 1
     new_counter = []
-    counter = 1 
+    order_num = 1 
     deli_counter.each do |name|
-      new_counter.push("#{counter}. #{name}")
-      counter += 1 
+      new_counter.push("#{order_num}. #{name}")
+      order_num += 1 
     end 
       puts "The line is currently: #{new_counter.join(" ")}"
   else
