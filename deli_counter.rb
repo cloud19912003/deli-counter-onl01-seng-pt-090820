@@ -2,10 +2,10 @@ require 'pry'
 
 def line(deli_counter)
   if deli_counter.size >= 1
-    nuarray = []
+    new_counter = []
     counter = 1 
-    array.each do |name|
-      nuarray.push("#{counter}. #{name}")
+    deli_counter.each do |name|
+      new_counter.push("#{counter}. #{name}")
       counter += 1 
   end 
     
