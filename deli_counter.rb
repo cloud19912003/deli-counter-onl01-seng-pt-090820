@@ -12,5 +12,5 @@ end
 
 def take_a_number(deli_counter, name)
   deli_counter << name
-  deli_counter.each.with_index(1){|name, index| puts "Welcome, #{name}. You are number #{index} in line."}
+  deli_counter.each.with_index(1){|name, index| puts "Welcome, #{name}. You are number #{deli_counter.length} in line."}
 end
