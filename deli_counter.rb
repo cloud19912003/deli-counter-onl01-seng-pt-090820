@@ -2,7 +2,12 @@ require 'pry'
 
 def line(deli_counter)
   if deli_counter.size >= 1
-    
+    nuarray = []
+    counter = 1 
+    array.each do |name|
+      nuarray.push("#{counter}. #{name}")
+      counter += 1 
+  end 
     
     
     puts "The line is currently: 1. #{deli_counter[0]} 2. #{deli_counter[1]} 3. #{deli_counter[2]}"
